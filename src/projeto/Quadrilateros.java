@@ -2,20 +2,20 @@ package projeto;
 
 public abstract class Quadrilateros {
 
-	public int comprimento;
-	public int largura;
-	public int altura;
-	public int base;
+	public double raio;
+	public double largura;
+	public double altura;
+	public double base;
 	
-    public int Comprimento() {
-        return comprimento;
+    public double Raio() {
+        return raio;
     }
  
-    public void setComprimento(int comprimento) {
-        this.comprimento = comprimento;
+    public void setRaio(int raio) {
+        this.raio = raio;
     }
  
-    public int getLargura() {
+    public double getLargura() {
         return largura;
     }
  
@@ -43,8 +43,8 @@ public abstract class Quadrilateros {
        
     }
    
-    Quadrilateros(int comprimento, int largura, int altura,int base){
-        this.comprimento = comprimento;
+    Quadrilateros(double raio, double largura, double altura,double base){
+        this.raio = raio;
         this.largura = largura;
         this.altura = altura;
         this.base = base;
