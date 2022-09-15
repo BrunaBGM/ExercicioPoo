@@ -38,6 +38,17 @@ public abstract class Tecnologias{
 	protected void setDescFramework(String descFramework) {
 		this.descFramework=descFramework;
 	}
+	
+	Tecnologias(){
+		
+	}
+	
+	Tecnologias(String lingProgramacao,String princFramework, String descLinguagem, String descFramework){
+		this.lingProgramacao=lingProgramacao;
+		this.princFramework=princFramework;
+		this.descLinguagem=descLinguagem;
+		this.descFramework=descFramework;
+	}
 }
 	
 

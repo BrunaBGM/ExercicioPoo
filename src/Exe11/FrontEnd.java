@@ -2,30 +2,35 @@ package Exe11;
 
 public class FrontEnd extends Tecnologias implements Linguagem {
 
-	String web;
-	String mobile;
+	protected boolean compatibilidadeWeb;
+	protected boolean compatibilidadeMobile;
 	
-	public FrontEnd(String web , String mobile) {
+	
+	public boolean getCompatibilidadeWeb() {
+		return compatibilidadeWeb;
+	}
+	
+	public void setCompatibilidadeWeb(boolean compatibilidadeWeb) {
+		this.compatibilidadeWeb=compatibilidadeWeb;
+	}
+	
+	public boolean getCompatibilidadeMobile() {
+		return compatibilidadeMobile;
+	}
+	
+	public void setCompatibilidadeMobile(boolean compatibilidadeMobile) {
+		this.compatibilidadeMobile=compatibilidadeMobile;
+	}
+	
+	public FrontEnd() {
 		
-		setWeb(web);
-		setMobile(mobile);
-		
 	}
 	
-	public String getWeb() {
-		return web;
-	}
+	public FrontEnd(String lingProgramacao,String princFramework,String descLinguagem,String descFramework,boolean compatibilidadeWeb, boolean compatibilidadeMobile) {
+			super(lingProgramacao,princFramework,descLinguagem, descFramework);
+			this.compatibilidadeWeb=compatibilidadeWeb;
+			this.compatibilidadeMobile=compatibilidadeMobile;
 	
-	public void setWeb(String web) {
-		this.web=web;
-	}
-	
-	public String getMobile() {
-		return mobile;
-	}
-	
-	public void setMobile(String mobile) {
-		this.mobile=mobile;
 	}
 	
 	@Override
